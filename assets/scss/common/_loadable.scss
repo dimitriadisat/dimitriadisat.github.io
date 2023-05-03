@@ -1,0 +1,61 @@
+.loadable {
+  min-height: 100vh;
+  > div {
+
+    position: relative;
+    //overflow-y: hidden;
+
+    &:after,
+    &:before {
+      content: "";
+      position: fixed;
+      display: block;
+      top: 0;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 99;
+      transition: opacity 200ms, visibility 200ms;
+    }
+
+    &:before {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    &:after {
+      background-color: $primary;
+      height: 8px;
+      animation-name: ch_loader;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  &.is-loading {
+    > div {
+      &:after,
+      &:before {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+
+@keyframes ch_loader {
+  0% {
+    left: 0%;
+    right: 100%;
+  }
+  50% {
+    left: 20%;
+    right: 20%;
+  }
+  100% {
+    left: 100%;
+    right: 0%;
+  }
+}
