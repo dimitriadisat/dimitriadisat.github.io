@@ -1,4 +1,3 @@
-"use strict";
 (self["webpackChunkproperty_console"] = self["webpackChunkproperty_console"] || []).push([["polyfills"],{
 
 /***/ 94623:
@@ -7,6 +6,7 @@
   \***********************************************/
 /***/ (() => {
 
+"use strict";
 
 /**
  * @license Angular v12.0.0-next.0
@@ -2973,9 +2973,16 @@ Zone.__load_patch('PromiseRejectionEvent', (global, Zone) => {
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var zone_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! zone.js */ 94623);
-/* harmony import */ var zone_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(zone_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _angular_localize_init__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/localize/init */ 16350);
+/* harmony import */ var _angular_localize_init__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_angular_localize_init__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var zone_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! zone.js */ 94623);
+/* harmony import */ var zone_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(zone_js__WEBPACK_IMPORTED_MODULE_1__);
+/***************************************************************************************************
+ * Load `$localize` onto the global scope - used if i18n tags appear in Angular templates.
+ */
+
 /**
  * This file includes polyfills needed by Angular and is loaded before the app.
  * You can add your own extra polyfills to this file.
@@ -3035,6 +3042,16 @@ __webpack_require__.r(__webpack_exports__);
  * APPLICATION IMPORTS
  */
 
+
+/***/ }),
+
+/***/ 16350:
+/*!****************************************!*\
+  !*** @angular/localize/init (ignored) ***!
+  \****************************************/
+/***/ (() => {
+
+/* (ignored) */
 
 /***/ })
 
