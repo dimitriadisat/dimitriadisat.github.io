@@ -14971,8 +14971,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const _c6 = function (a0) { return { "is-loading": a0 }; };
-const _c7 = function () { return ["/register"]; };
+const _c8 = function (a0) { return { "is-loading": a0 }; };
+const _c9 = function () { return ["/register"]; };
 class ConnectComponent {
     constructor(fb, auth, alertService, sessionService, router) {
         this.fb = fb;
@@ -15022,25 +15022,31 @@ class ConnectComponent {
     }
 }
 ConnectComponent.ɵfac = function ConnectComponent_Factory(t) { return new (t || ConnectComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_5__.FormBuilder), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_services_api_auth_service__WEBPACK_IMPORTED_MODULE_0__.AuthService), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_modules_alert_alert_service__WEBPACK_IMPORTED_MODULE_1__.AlertService), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_services_auth_session_service__WEBPACK_IMPORTED_MODULE_2__.SessionService), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_7__.Router)); };
-ConnectComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineComponent"]({ type: ConnectComponent, selectors: [["app-connect"]], decls: 16, vars: 7, consts: function () { let i18n_0; if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-        const MSG_EXTERNAL_4768749765465246664$$SRC_APP_PAGES_USER_CONNECT_CONNECT_COMPONENT_TS_1 = goog.getMsg("Email");
-        i18n_0 = MSG_EXTERNAL_4768749765465246664$$SRC_APP_PAGES_USER_CONNECT_CONNECT_COMPONENT_TS_1;
+ConnectComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineComponent"]({ type: ConnectComponent, selectors: [["app-connect"]], decls: 16, vars: 6, consts: function () { let i18n_0; if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+        const MSG_EXTERNAL_6506298342408976243$$SRC_APP_PAGES_USER_CONNECT_CONNECT_COMPONENT_TS_1 = goog.getMsg("Connect with credentials");
+        i18n_0 = MSG_EXTERNAL_6506298342408976243$$SRC_APP_PAGES_USER_CONNECT_CONNECT_COMPONENT_TS_1;
     }
     else {
-        i18n_0 = "Email";
+        i18n_0 = "Connect with credentials";
     } let i18n_2; if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-        const MSG_EXTERNAL_1431416938026210429$$SRC_APP_PAGES_USER_CONNECT_CONNECT_COMPONENT_TS_3 = goog.getMsg("Password");
-        i18n_2 = MSG_EXTERNAL_1431416938026210429$$SRC_APP_PAGES_USER_CONNECT_CONNECT_COMPONENT_TS_3;
+        const MSG_EXTERNAL_4768749765465246664$$SRC_APP_PAGES_USER_CONNECT_CONNECT_COMPONENT_TS_3 = goog.getMsg("Email");
+        i18n_2 = MSG_EXTERNAL_4768749765465246664$$SRC_APP_PAGES_USER_CONNECT_CONNECT_COMPONENT_TS_3;
     }
     else {
-        i18n_2 = "\u039A\u03C9\u03B4\u03B9\u03BA\u03CC\u03C2";
+        i18n_2 = "Email";
     } let i18n_4; if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
-        const MSG_EXTERNAL_813263746069473514$$SRC_APP_PAGES_USER_CONNECT_CONNECT_COMPONENT_TS_5 = goog.getMsg("Connect");
-        i18n_4 = MSG_EXTERNAL_813263746069473514$$SRC_APP_PAGES_USER_CONNECT_CONNECT_COMPONENT_TS_5;
+        const MSG_EXTERNAL_1431416938026210429$$SRC_APP_PAGES_USER_CONNECT_CONNECT_COMPONENT_TS_5 = goog.getMsg("Password");
+        i18n_4 = MSG_EXTERNAL_1431416938026210429$$SRC_APP_PAGES_USER_CONNECT_CONNECT_COMPONENT_TS_5;
     }
     else {
-        i18n_4 = "\u03A3\u03CD\u03BD\u03B4\u03B5\u03C3\u03B7";
-    } return [[1, "row", "justify-content-center"], [1, "col-11", "col-sm-10", "col-md-8", "col-lg-6", "col-xl-5", "py-5"], [1, "loadable", 3, "title", "ngClass"], [3, "formGroup", "ngSubmit"], ["label", i18n_0], ["formControlName", "email", "type", "text", 1, "form-control"], ["label", i18n_2], ["formControlName", "password", "type", "password", 1, "form-control"], ["type", "submit", 1, "btn", "btn-primary"], i18n_4, [1, "my-3", "text-center"], [1, ""], [3, "routerLink"]]; }, template: function ConnectComponent_Template(rf, ctx) { if (rf & 1) {
+        i18n_4 = "\u039A\u03C9\u03B4\u03B9\u03BA\u03CC\u03C2";
+    } let i18n_6; if (typeof ngI18nClosureMode !== "undefined" && ngI18nClosureMode) {
+        const MSG_EXTERNAL_813263746069473514$$SRC_APP_PAGES_USER_CONNECT_CONNECT_COMPONENT_TS_7 = goog.getMsg("Connect");
+        i18n_6 = MSG_EXTERNAL_813263746069473514$$SRC_APP_PAGES_USER_CONNECT_CONNECT_COMPONENT_TS_7;
+    }
+    else {
+        i18n_6 = "\u03A3\u03CD\u03BD\u03B4\u03B5\u03C3\u03B7";
+    } return [[1, "row", "justify-content-center"], [1, "col-11", "col-sm-10", "col-md-8", "col-lg-6", "col-xl-5", "py-5"], ["title", i18n_0, 1, "loadable", 3, "ngClass"], [3, "formGroup", "ngSubmit"], ["label", i18n_2], ["formControlName", "email", "type", "text", 1, "form-control"], ["label", i18n_4], ["formControlName", "password", "type", "password", 1, "form-control"], ["type", "submit", 1, "btn", "btn-primary"], i18n_6, [1, "my-3", "text-center"], [1, ""], [3, "routerLink"]]; }, template: function ConnectComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](2, "app-card", 2);
@@ -15071,11 +15077,11 @@ ConnectComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_6_
         _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("title", "Connect with credentials")("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵpureFunction1"](4, _c6, ctx.isConnecting));
+        _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵpureFunction1"](3, _c8, ctx.isConnecting));
         _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("formGroup", ctx.connectForm);
         _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵadvance"](11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵpureFunction0"](6, _c7));
+        _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵpureFunction0"](5, _c9));
     } }, directives: [_ui_widgets_card_card_component__WEBPACK_IMPORTED_MODULE_3__.CardComponent, _angular_common__WEBPACK_IMPORTED_MODULE_8__.NgClass, _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.FormGroupDirective, _ui_forms_form_group_container_form_group_container_component__WEBPACK_IMPORTED_MODULE_4__.FormGroupContainerComponent, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.FormControlName, _angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterLinkWithHref], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjb25uZWN0LmNvbXBvbmVudC5zY3NzIn0= */"] });
 
 
@@ -21229,8 +21235,8 @@ const environment = {
         product: 'Πτυχιακή',
     },
     resultsPerPage: 10,
-    mediaUrl: 'http://codeehut.local:8000/',
-    apiUrl: 'http://codeehut.local:8000/api/v1/',
+    mediaUrl: 'https://stgapi.codeehut.com/',
+    apiUrl: 'https://stgapi.codeehut.com/api/v1/',
     defaultLocale: 'en',
     centralDomain: 'codeehut.local',
     protocol: 'http',
