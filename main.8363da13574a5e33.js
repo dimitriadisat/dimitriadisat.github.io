@@ -21601,9 +21601,9 @@ const environment = {
     mediaUrl: 'https://stgapi.codeehut.com/',
     apiUrl: 'https://stgapi.codeehut.com/api/v1/',
     defaultLocale: 'en',
-    centralDomain: 'codeehut.local',
-    protocol: 'http',
-    port: '8000',
+    centralDomain: 'stgapi.codeehut.com',
+    protocol: 'https',
+    port: null,
     apiSuffix: 'api/v1/',
     company: {
         logo: {
@@ -21960,4 +21960,4 @@ webpackContext.id = 46700;
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=main.8582e235aee36f7e.js.map
+//# sourceMappingURL=main.8363da13574a5e33.js.map
